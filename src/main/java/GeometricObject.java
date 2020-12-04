@@ -1,5 +1,5 @@
 
-public abstract class GeometricObject implements BucketOfObjects  {
+public class GeometricObject implements BucketOfObjects  {
   private String color = "white";
   private boolean filled;
   private java.util.Date dateCreated;

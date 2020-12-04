@@ -1,4 +1,4 @@
-public class BucketOfObjects {
+public abstract class BucketOfObjects {
     private GeometricObject[] items;
 public BucketOfObjects(){
     
