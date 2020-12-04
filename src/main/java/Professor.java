@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Professor extends User{
     private Faculty faculty = Faculty.TUB;
     private Campus campus = Campus.KLE;
