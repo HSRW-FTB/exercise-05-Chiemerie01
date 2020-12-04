@@ -1,4 +1,4 @@
-public class BucketOfObjects implements GeometricObject{
+public class BucketOfObjects {
     private GeometricObject[] items;
 public BucketOfObjects(){
     

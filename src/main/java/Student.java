@@ -1,6 +1,6 @@
     // Implement your Student class here
 
-public class Student extends User implements Classroom {
+public class Student extends User implements  Classroom {
     private static int idGen = 10000;
     private Course studycourse;
 private Student(){
