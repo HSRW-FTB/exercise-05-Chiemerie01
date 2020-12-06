@@ -3,9 +3,7 @@ public class Professor extends User{
     private Faculty faculty = Faculty.TUB;
     private Campus campus = Campus.KLE;
     private int phone = 0;
-private Professor() {
-
-}  
+private Professor(){}  
 public Professor(String id, String firstname, String lastname) {
     super(id, Domain.Staff, firstname, lastname);
 } 
@@ -35,10 +33,10 @@ public void setPhone(int extension){
 }
 public String getPhone(){
     if (campus == Campus.KLE){
-        return "+49282180673" +phone;
+        return "+49282180673" +String.valueOf(this.phone);
     }
     else{
-        return "+492842908" +phone;
+        return "+492842908" +String.valueOf(this.phone);
     }
 }
 
