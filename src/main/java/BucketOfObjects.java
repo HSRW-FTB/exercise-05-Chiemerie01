@@ -1,29 +1,29 @@
-public abstract class BucketOfObjects {
-    private GeometricObject[] items;
+public interface BucketOfObjects {
+    private GeometricObject items;
 public BucketOfObjects(){
     
 }
 public void addObject(GeometricObject object){
-    this.item = object;
+    this.items = object;
 }    
 public double getTotalArea(){
-    return Circle.getArea()+Triangle.getArea()+RegularPolygon.getArea();
+    return circ1.getArea() + tri1.getArea() + rect1.getArea() + pol1.getPerimeter() + pol2.getPerimeter();
 }
 public double getTotalPerimeter(){
-    return Circle.getPerimeter()+Triangle.getPerimeter()+RegularPolygon.getPerimeter();
+    return circ1.getPerimeter() + tri1.getPerimeter() + rect1.getPerimeter() + pol1.getPerimeter() + pol2.getPerimeter();
 }
 public String toString(){
     return "Triangle, Circle, Rectangle";
 }
     public static void main(String[] args){
-        Circle circle1 = new Circle();
-        Rectangle rect1 = new Rectangle();
-        Triangle tri1 = new Triangle();
-        RegularPolygon pol1 = new RegularPolygon(5,2,9,8);
-        RegularPolygon pol2 = new RegularPolygon(3,5);
+        GeometricObject circ1 = new Circle(4);
+        GeometricObject rect1 = new Rectangle(6,4);
+        GeometricObject tri1 = new Triangle(6,5,9);
+        GeometricObject pol1 = new RegularPolygon(5,2,9,8);
+        GeometricObject pol2 = new RegularPolygon(3,5);
         
-        System.out.println("The total perimeter is " +BucketOfObjects.getPerimeter());
-        System.out.println("The total area is " +BucketOfObjects.getArea());
+        System.out.println("The total perimeter is " +BucketOfObjects.getTotalPerimeter());
+        System.out.println("The total area is " +BucketOfObjects.getTotalArea());
 
     }
 }

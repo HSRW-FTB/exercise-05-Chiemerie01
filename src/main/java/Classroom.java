@@ -1,5 +1,5 @@
 import java.util.Date;
-public abstract class Classroom{
+public interface Classroom{
     private String id;
     private Course course;
     private Student[] participants;
@@ -32,7 +32,12 @@ public String getRoom(){
     return room;
 }
 public String getTerm(){
-    return term;
+    if Month.getValue() >= 10  && Month.getValue() <= 02{
+  return "WS" +Year.now.getValue() +"/" +NextYear.getValue();
+}
+else if Month.getValue() >= 03 && Month.getValue() <= 09{
+  return "SS" +Year.getValue();
+}
 }
 public String getID(){
     return id;
