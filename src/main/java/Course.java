@@ -1,5 +1,5 @@
 import java.util.*;
-public class Course implements Classroom {
+public class Course {
     private String id;
     private String name;
     private Professor lecturer;
@@ -32,6 +32,6 @@ public void setCredit(int credit){
     this.credit = credit;
 }
 public int getCredit(){
-    return credit;
+    return this.credit;
 }
 }
