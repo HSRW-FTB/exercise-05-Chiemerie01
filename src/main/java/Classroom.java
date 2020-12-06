@@ -25,7 +25,7 @@ public Classroom(Course course, String room ){
     if (month<10 && month>02){
         term = "SS"+year+"/"+((year+1)%100);
     }
-    else if {
+    else{
         term = "WS"+year+"/"+((year+1)%100);
     }
 }
@@ -40,7 +40,7 @@ public Classroom(Course course, String room, Date date){
     if (month<10 && month>02){
         term = "SS"+year+"/"+((year+1)%100);
     }
-    else if {
+    else {
         term = "WS"+year+"/"+((year+1)%100);
     }
 
