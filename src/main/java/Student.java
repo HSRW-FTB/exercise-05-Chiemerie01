@@ -1,6 +1,13 @@
     import java.util.Date;
     // Implement your Student class here
 
+import javax.management.MBeanServerBuilder;
+
+import org.graalvm.compiler.asm.sparc.SPARCAssembler.MembarMask;
+
+import jdk.nashorn.internal.runtime.arrays.IntElements;
+import sun.reflect.generics.tree.BottomSignature;
+
 public class Student extends User {
     private int id;
     private static int idGen = 10000;
@@ -30,9 +37,27 @@ public void setStudyCourse(String studycourse){
     this.studycourse = StudyCourse.valueOf(studycourse);
 }
 public String getStudyCourseDescription(){
-    int k = 0;
-    String[] a1 = {"ME", "MSE", "EL", "IE", "BMS", "SCB", "MME", "MBB"};
-    String[] a2 = {"Mechanical Engineering, B.Sc", "Mechatronic System Engineering, B.Sc.", "Electrical and Electronics Engineering, B.Sc,", "Industrial Engineering, B.Sc.","Biomaterials Science, B.Sc.","Science Communication and Bionics, B.A./B:Sc.", "Mechanical Engineering, M.Sc.", "Bionics/Biomimetics, M.Sc."};
+   switch(studycourse){
+        case ME 
+            return "Mechanical Engineering, B.Sc.";
+        case MSE
+            return "Mechatronic Systems Engineering, B.Sc.";
+        case EL
+            return "Electrical Engineering, B.Sc.";
+        case IE    
+            return "Industrial Engineering, B.Sc.";
+        case BMS    
+            return "Bionics/Biomimetics, M.Sc.";
+        case SCB 
+            return "Science Communication & Bionics, B.Sc.";
+        case MME 
+            return "Mechanical Engineering, M.Sc.";
+        case MBB 
+            return "Bionics, M.Sc.";
+        default 
+            return "No Study Course";               
+
+   }
 
     for (int i=0; i<7; i++){
         if(a1[i]==studycourse.name()){
