@@ -26,7 +26,7 @@ public String toString(){
     for (int i = 0; i < items.size(); i++){
         str = str + items.get(i).getClass().getSimpleName() +",";
     }
-    return str.uubstring(0, str.length() - 2);
+    return str.substring(0, str.length() - 2);
 }
     public static void main(String[] args){
         Trinagle tri1 = new Triangle(5,5,5);

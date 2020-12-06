@@ -14,19 +14,19 @@ public Course(String id, String name, Professor lecturer, int credit){
     this.credit = credit;
 }
 public String getID(){
-    return id;
+    return this.id;
 } 
 public void setName(String name){
     this.name = name;
 }
 public String getName(){
-    return name;
+    return this.name;
 }
 public void setLecturer(String lecturer){
     this.lecturer = lecturer;
 }
 public String getLecturer(){
-    return lecturer;
+    return this.lecturer;
 }
 public void setCredit(int credit){
     this.credit = credit;

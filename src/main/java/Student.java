@@ -13,11 +13,11 @@ private Student(){
     idGen++;
 }
 public Student(String firstname, String lastname){
-    super(Integer.toString(idGen), Domain.Student, firstname,lastname);
+    super(Integer.toString(idGen), Domain.Student, firstname, lastname);
     idGen++;
 } 
 public Student(String firstname, String lastname, String birthdate){
-    super(Integer.toString(idGen), Domain.Student, firstname,lastname, birthdate);
+    super(Integer.toString(idGen), Domain.Student, firstname, lastname, birthdate);
     idGen++;
 }
 public void setStudyCourse(StudyCourse studycourse){

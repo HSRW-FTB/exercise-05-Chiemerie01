@@ -73,7 +73,7 @@ public String getParticipantsEmail(){
 
 }
 public int getTotalParticipants(){
-    return paricipants.size();  //ValueOf.participants()
+    return participants.size();  //ValueOf.participants()
 }
 
 }
