@@ -11,6 +11,8 @@ public Circle(double radius) {
     
 public Circle(double radius, String color, boolean filled) {
     this.radius = radius;
+    setColor(color);
+    setFilled(filled);
 } 
     
 public double getArea() {
@@ -21,8 +23,8 @@ public double setRadius(double radius){
     this.radius = radius;
 }
     
-public double getRadius() {
-    return radius;
+public double getDiameter() {
+    return 2*radius;
 }
     
 public double getPerimeter() {

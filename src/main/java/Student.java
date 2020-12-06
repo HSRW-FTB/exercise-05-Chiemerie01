@@ -1,27 +1,32 @@
     // Implement your Student class here
 
-public class Student extends User implements Classroom {
+public class Student extends User {
+    private int id;
     private static int idGen = 10000;
-    private Course studycourse;
+    private StudyCourse studycourse;
+    private String firstname;
+    private String lastname;
+    private Date birthdate;
 private Student(){
+    id = idGen;
     idGen++;
 }
 public Student(String firstname, String lastname){
-    super(String.valueOf(idGen), Domain.Student, firstname, lastname);
+    super(Integer.toString(idGen), Domain.Student, firstname,lastname);
     idGen++;
 } 
 public Student(String firstname, String lastname, String birthdate){
-    super(String.valueOf(idGen), Domain.Student, firstname, lastname, birthdate);
+    super(Integer.toString(idGen), Domain.Student, firstname,lastname, birthdate);
     idGen++;
 }
-public void setStudyCourse(Course studycourse){
+public void setStudyCourse(StudyCourse studycourse){
     this.studycourse = studycourse;
 }
-public Course getStudyCourse(){
+public StudyCourse getStudyCourse(){
     return this.studycourse;
 }
-public void setStudyCourse(String course){
-    this.studycourse = Course.valueOf(course);
+public void setStudyCourse(String studycourse){
+    this.studycourse = StudyCourse.valueOf(studycourse);
 }
 public String getStudyCourseDescription(){
     int k = 0;

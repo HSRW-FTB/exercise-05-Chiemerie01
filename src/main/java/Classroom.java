@@ -1,29 +1,54 @@
 import java.util.Date;
-public interface Classroom{
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Classroom{
     private String id;
     private Course course;
-    private Student[] participants;
+    private ArrayList<Student> participants = new ArrayList<Student>();
     private String room;
     private String term;
+
 private Classroom(){
-    this.id = id;
-    this.course = course;
-    this.participants = participants;
-    this.room = room;
-    this.term = term;
+    
 }
 public Classroom(Course course, String room ){
     this.course = course;
     this.room = room;
+    Date date = new Date();
+    Calendar calendar = new GregorianCalendar();
+    calendar.setTime(date);
+    int year = calendar.get(Calendar.YEAR);
+    int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero
+
+    if (month<10 && month>02){
+        term = "SS"+year+"/"+((year+1)%100);
+    }
+    else if {
+        term = "WS"+year+"/"+((year+1)%100);
+    }
 }
 public Classroom(Course course, String room, Date date){
     this.course = course;
     this.room = room;
-    this.date = date;
+    Calendar calendar = new GregorianCalendar();
+    calendar.setTime(date);
+    int year = calendar.get(Calendar.YEAR);
+    int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero
+
+    if (month<10 && month>02){
+        term = "SS"+year+"/"+((year+1)%100);
+    }
+    else if {
+        term = "WS"+year+"/"+((year+1)%100);
+    }
+
+    this.id = course.getID() +"-" +term;
 }
 
 public Course getCourse(){
-    return course;
+    return this.course;
 }
 public void setRoom(String room){
     this.room = room;
@@ -32,25 +57,23 @@ public String getRoom(){
     return room;
 }
 public String getTerm(){
-    if Month.getValue() >= 10  && Month.getValue() <= 02{
-  return "WS" +Year.now.getValue() +"/" +NextYear.getValue();
-}
-else if Month.getValue() >= 03 && Month.getValue() <= 09{
-  return "SS" +Year.getValue();
-}
+    return this.term;
 }
 public String getID(){
-    return id;
+    return this.id;
 }
-public void addStudent(Student newStudent){
-    student = newStudent;
+public void addStudent(Student student){
+    participants.add(student);
 }
 public String getParticipantsEmail(){
-    return id +"@student.hsrw";
+    String emails = "";
+    for (int i=0; i<participants.size(); i++ ){
+        emails = emails + participants.get(i).getFQUN() + ",";
+    }
 
 }
 public int getTotalParticipants(){
-
+    return paricipants.size();  //ValueOf.participants()
 }
 
 }
