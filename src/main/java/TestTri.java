@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class TestTri {
-    public static voidn main(String[] args){
+    public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter three sides: ");
@@ -14,5 +14,15 @@ public class TestTri {
 
         System.out.println("Triangle filled?(true/false): ");
         boolean filled = in.nextBoolean();
+
+        Triangle tri = new Triangle(side1, side2, side3);
+        tri.setColor(color);
+        tri.setfilled(filled);
+
+        System.out.println(tri.toString());
+        System.out.println("Area: " +tri.getArea());
+        System.out.println("Perimeter: " +tri.getPerimeter());
+        System.out.println("Colour: " +tri.getColor());
+        System.out.println("Triangle is " +(triangle.isFilled() ? "" : "not"));
     } 
 }
