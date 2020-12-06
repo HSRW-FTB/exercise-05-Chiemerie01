@@ -38,21 +38,21 @@ public void setStudyCourse(String studycourse){
 }
 public String getStudyCourseDescription(){
    switch(studycourse){
-        case ME 
+        case ME: 
             return "Mechanical Engineering, B.Sc.";
-        case MSE
+        case MSE:
             return "Mechatronic Systems Engineering, B.Sc.";
-        case EL
+        case EL:
             return "Electrical Engineering, B.Sc.";
-        case IE    
+        case IE:    
             return "Industrial Engineering, B.Sc.";
-        case BMS    
+        case BMS:   
             return "Bionics/Biomimetics, M.Sc.";
-        case SCB 
+        case SCB: 
             return "Science Communication & Bionics, B.Sc.";
-        case MME 
+        case MME: 
             return "Mechanical Engineering, M.Sc.";
-        case MBB 
+        case MBB: 
             return "Bionics, M.Sc.";
         default 
             return "No Study Course";               
