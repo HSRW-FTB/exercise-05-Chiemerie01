@@ -7,14 +7,14 @@ public BucketOfObjects(){
 public void addObject(GeometricObject object){
     items.add(object);
 }    
-public static double getTotalArea(){
+public double getTotalArea(){
     double totalArea = 0.0;
     for (int i = 0; i < items.size(); i++){
         totalArea += items.get(i).getArea();
     }
     return totalArea;
 }
-public static double getTotalPerimeter(){
+public double getTotalPerimeter(){
     double totalPerimeter = 0.0;
     for (int i = 0; i < items.size(); i++){
         totalPerimeter += items.get(i).getPerimeter();
