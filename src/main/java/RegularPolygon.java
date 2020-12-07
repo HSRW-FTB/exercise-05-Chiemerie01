@@ -44,10 +44,10 @@ public void setY(double y){
 public double getY(){
     return y;
 }
-double getPerimeter(){
+public double getPerimeter(){
     return (n*side);
 }
-double getArea(){
+public double getArea(){
     return (n*side*side)/(4*Math.tan(Math.PI/n));
 }
 public String toString(){
