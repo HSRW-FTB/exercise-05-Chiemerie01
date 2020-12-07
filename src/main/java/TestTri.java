@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class TestTri {
+public class TestTri{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 
@@ -10,7 +10,7 @@ public class TestTri {
         double side3 = in.nextDouble();
 
         System.out.println("Colour: ");
-        String color = in.next();
+        String color = in.nextString();
 
         System.out.println("Triangle filled?(true/false): ");
         boolean filled = in.nextBoolean();
