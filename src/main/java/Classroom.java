@@ -38,7 +38,7 @@ public Classroom(Course course, String room, Date date){
     int year = calendar.get(Calendar.YEAR);
     int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero
 
-    if (month<10 && month>02){
+    if (month<10 && month>2){
         term = "SS"+year+"/"+((year+1)%100);
     }
     else {
