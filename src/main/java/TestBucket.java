@@ -18,10 +18,22 @@ public class TestBucket {
         bucket.addObject((GeometricObject) tri2);
         bucket.addObject((GeometricObject) pol2);
         geo.setColor("red");
-        pol1.getX();
-        pol2.getY();
-        pol1.getN();
-        bucket.toString();        
+        System.out.println("X for Polygon 1 is " +pol1.getX()); 
+        System.out.println("Y for Polygon 2 is " +pol2.getY()); 
+        System.out.println("N for Polygon 1 is " +pol1.getN()); 
+        System.out.println(bucket.toString()); 
+        System.out.println(+pol2.getSide());
+        System.out.println(+pol1.getPerimeter());
+        System.out.println(+pol2.getPerimeter());
+        System.out.println(+pol1.getArea());
+        System.out.println(+geo.getArea());
+        System.out.println(+bucket.getTotalArea());
+        System.out.println(+bucket.getTotalPerimeter());
+        System.out.println(+pol2.toString());
+        System.out.println(+pol2.getColor());
+        System.out.println();
+
+
         
         System.out.println("The total perimeter is " +BucketOfObjects.getTotalPerimeter());
         System.out.println("The total area is " +BucketOfObjects.getTotalArea());
