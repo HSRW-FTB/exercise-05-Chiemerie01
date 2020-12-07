@@ -36,7 +36,7 @@ public Classroom(Course course, String room, Date date){
     Calendar calendar = new GregorianCalendar();
     calendar.setTime(date);
     int year = calendar.get(Calendar.YEAR);
-    int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero
+    int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero to eleven
 
     if (month<10 && month>2){
         term = "SS"+year+"/"+((year+1)%100);
