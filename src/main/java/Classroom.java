@@ -55,7 +55,7 @@ public void setRoom(String room){
     this.room = room;
 }
 public String getRoom(){
-    return room;
+    return this.room;
 }
 public String getTerm(){
     return this.term;
