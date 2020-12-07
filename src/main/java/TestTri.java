@@ -23,6 +23,6 @@ public class TestTri {
         System.out.println("Area: " +tri.getArea());
         System.out.println("Perimeter: " +tri.getPerimeter());
         System.out.println("Colour: " +tri.getColor());
-        System.out.println("Triangle is " +(triangle.isFilled() ? "" : "not filled"));
+        System.out.println("Triangle is " +(tri.isFilled() ? "" : "not filled"));
     } 
 }
