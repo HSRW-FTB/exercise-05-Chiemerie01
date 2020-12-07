@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 public class BucketOfObjects {
-    private ArrayList <GeometricObject> items = new ArrayList<GeometricObject>();
+private ArrayList<GeometricObject> items = new ArrayList<GeometricObject>();
 public BucketOfObjects(){
     
 }
