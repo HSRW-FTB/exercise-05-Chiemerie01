@@ -70,7 +70,7 @@ public String getParticipantsEmail(){
     for (int i=0; i<participants.size(); i++ ){
         emails = emails + participants.get(i).getFQUN() + ",";
     }
-
+    return emails.substring(0, emails.length()-2);
 }
 public int getTotalParticipants(){
     return participants.size();  //ValueOf.participants()
