@@ -46,7 +46,7 @@ public Domain getDomain(){
     return this.domain;
 }
 public String getFQUN(){
-    if(domain == Domain.Staff){
+    if(domain == Domain.STAFF){
         return id +"@staff.hsrw";
     }
     else{
