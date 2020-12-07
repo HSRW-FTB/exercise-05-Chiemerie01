@@ -54,7 +54,7 @@ public String getStudyCourseDescription(){
             return "Mechanical Engineering, M.Sc.";
         case MBB: 
             return "Bionics, M.Sc.";
-        default 
+        default: 
             return "No Study Course";               
 
    }
