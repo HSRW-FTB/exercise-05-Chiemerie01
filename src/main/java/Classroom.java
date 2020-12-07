@@ -13,7 +13,7 @@ public class Classroom{
 private Classroom(){
     
 }
-public Classroom(Course course, String room ){
+public Classroom(Course course, String room){
     this.course = course;
     this.room = room;
     Date date = new Date();
@@ -28,7 +28,7 @@ public Classroom(Course course, String room ){
     else{
         term = "WS"+year+"/"+((year+1)%100);
     }
-    this.id = course.getID()+"-" +term;
+    this.id = course.getID()+"-"+ term;
 }
 public Classroom(Course course, String room, Date date){
     this.course = course;
@@ -45,7 +45,7 @@ public Classroom(Course course, String room, Date date){
         term = "WS"+year+"/"+((year+1)%100);
     }
 
-    this.id = course.getID() +"-" +term;
+    this.id = course.getID()+"-"+ term;
 }
 
 public Course getCourse(){
@@ -68,10 +68,10 @@ public void addStudent(Student student){
 }
 public String getParticipantsEmail(){
     String emails = "";
-    for (int i=0; i<participants.size(); i++ ){
+    for (int i=0; i<participants.size(); i++){
         emails = emails + participants.get(i).getFQUN() + ",";
     }
-    return emails.substring(0, emails.length()-2);
+    return emails.substring(0, emails.length() - 2);
 }
 public int getTotalParticipants(){
     return participants.size();  //ValueOf.participants()
