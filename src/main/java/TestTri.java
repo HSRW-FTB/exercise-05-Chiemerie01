@@ -17,12 +17,12 @@ public class TestTri {
 
         Triangle tri = new Triangle(side1, side2, side3);
         tri.setColor(color);
-        tri.setfilled(filled);
+        tri.setFilled(filled);
 
         System.out.println(tri.toString());
         System.out.println("Area: " +tri.getArea());
         System.out.println("Perimeter: " +tri.getPerimeter());
         System.out.println("Colour: " +tri.getColor());
-        System.out.println("Triangle is " +(triangle.isFilled() ? "" : "not"));
+        System.out.println("Triangle is " +(triangle.isFilled() ? "" : "not filled"));
     } 
 }
