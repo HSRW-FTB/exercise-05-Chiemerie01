@@ -1,13 +1,6 @@
     import java.util.Date;
     // Implement your Student class here
 
-import javax.management.MBeanServerBuilder;
-
-import org.graalvm.compiler.asm.sparc.SPARCAssembler.MembarMask;
-
-import jdk.nashorn.internal.runtime.arrays.IntElements;
-import sun.reflect.generics.tree.BottomSignature;
-
 public class Student extends User {
     private int id;
     private static int idGen = 10000;
@@ -46,16 +39,16 @@ public String getStudyCourseDescription(){
             return "Electrical Engineering, B.Sc.";
         case IE:    
             return "Industrial Engineering, B.Sc.";
-        case BMS:   
+        case BMS:    
             return "Bionics/Biomimetics, M.Sc.";
         case SCB: 
             return "Science Communication & Bionics, B.Sc.";
         case MME: 
             return "Mechanical Engineering, M.Sc.";
         case MBB: 
-            return "Bionics, M.Sc.";
-        default: 
-            return "No Study Course";               
+            return "Bionics, M.Sc." ;
+        default:
+            return "No Study Course" ;             
 
    }
 
