@@ -10,7 +10,7 @@ public class TestTri{
         double side3 = in.nextDouble();
 
         System.out.println("Colour: ");
-        String color = in.nextString();
+        String color = in.next();
 
         System.out.println("Triangle filled?(true/false): ");
         boolean filled = in.nextBoolean();
