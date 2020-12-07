@@ -13,7 +13,7 @@ public Professor(String id, String firstname, String lastname, Date birthdate){
 public void setFaculty(Faculty faculty){
     this.faculty = faculty;
 }
-public Faculty getFaculty(){
+public String getFaculty(){
     if (faculty == Faculty.TUB){
         return "Technology and Bionics";
     }

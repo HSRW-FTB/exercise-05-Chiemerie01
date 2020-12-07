@@ -16,7 +16,7 @@ public Student(String firstname, String lastname){
     super(Integer.toString(idGen), Domain.Student, firstname, lastname);
     idGen++;
 } 
-public Student(String firstname, String lastname, String birthdate){
+public Student(String firstname, String lastname, Date birthdate){
     super(Integer.toString(idGen), Domain.Student, firstname, lastname, birthdate);
     idGen++;
 }
@@ -51,14 +51,6 @@ public String getStudyCourseDescription(){
             return "No Study Course" ;             
 
    }
-
-    for (int i=0; i<7; i++){
-        if(a1[i]==studycourse.name()){
-            k = i;
-        }
-        return a2[k];
-    }
-}
 
 }
 

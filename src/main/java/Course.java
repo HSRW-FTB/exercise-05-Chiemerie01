@@ -21,10 +21,10 @@ public void setName(String name){
 public String getName(){
     return this.name;
 }
-public void setLecturer(String lecturer){
+public void setLecturer(Professor lecturer){
     this.lecturer = lecturer;
 }
-public String getLecturer(){
+public Professor getLecturer(){
     return this.lecturer;
 }
 public void setCredit(int credit){
