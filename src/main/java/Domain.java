@@ -1,1 +1,1 @@
-enum Domain {Staff, Student};
+enum Domain {STAFF, STUDENT}
