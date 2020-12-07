@@ -1,21 +1,21 @@
 
-public class Circle extends GeometricObject {
+public class Circle extends GeometricObject{
     private double radius;
     
-public Circle() {
+public Circle(){
 }
     
-public Circle(double radius) {
+public Circle(double radius){
     this.radius = radius;
 }
     
-public Circle(double radius, String color, boolean filled) {
+public Circle(double radius, String color, boolean filled){
     this.radius = radius;
     setColor(color);
     setFilled(filled);
 } 
     
-public double getArea() {
+public double getArea(){
     return radius * radius * Math.PI;
 }
 
@@ -23,19 +23,19 @@ public void setRadius(double radius){
     this.radius = radius;
 }
     
-public double getDiameter() {
+public double getDiameter(){
     return 2*radius;
 }
     
-public double getPerimeter() {
+public double getPerimeter(){
     return 2 * radius * Math.PI;
 }
     
-public void printCircle() {
+public void printCircle(){
     System.out.println("The circle is created " + getDateCreated() + " and the radius is " + radius);
 }
     
-public String toString() {
+public String toString(){
     return "Circle created on " + getDateCreated() + "\ncolor: " + this.getColor() + " and filled: "
     + this.isFilled() + " radius: " + radius;
 }
