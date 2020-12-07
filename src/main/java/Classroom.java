@@ -22,12 +22,13 @@ public Classroom(Course course, String room ){
     int year = calendar.get(Calendar.YEAR);
     int month = calendar.get(Calendar.MONTH) + 1;  //month starts from zero
 
-    if (month<10 && month>02){
+    if (month<10 && month>2){
         term = "SS"+year+"/"+((year+1)%100);
     }
     else{
         term = "WS"+year+"/"+((year+1)%100);
     }
+    this.id = course.getID()+"-" +term;
 }
 public Classroom(Course course, String room, Date date){
     this.course = course;
