@@ -9,15 +9,15 @@ public void addObject(GeometricObject object){
 }    
 public static double getTotalArea(){
     double totalArea = 0.0;
-    for (int i = 0; i< items.size(); i++){
-        totalArea = totalArea + items.get(i).getArea();
+    for (int i = 0; i < items.size(); i++){
+        totalArea += items.get(i).getArea();
     }
     return totalArea;
 }
 public static double getTotalPerimeter(){
     double totalPerimeter = 0.0;
     for (int i = 0; i < items.size(); i++){
-        totalPerimeter = totalPerimeter + items.get(i).getPerimeter();
+        totalPerimeter += items.get(i).getPerimeter();
     }
     return totalPerimeter;
 }
